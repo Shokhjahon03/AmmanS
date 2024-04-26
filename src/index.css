@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+html,body{
+  overflow-x: hidden;
+}
 *{
   margin: 0;
   padding: 0;
@@ -19,8 +21,8 @@ body{
 }
 #navbar{
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 90px 10px;
+  background-color: #fff;
+  /* padding: 90px 10px; */
   transition: 0.4s;
   position: fixed;
   width: 100%;
@@ -81,4 +83,16 @@ li:hover::after {
 
 li:hover p::before {
   width: 100%;
+}
+.card{
+  -webkit-box-shadow: -3px -1px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -3px -1px 13px 0px rgba(0,0,0,0.75);
+  box-shadow: -3px -1px 13px 0px rgba(0,0,0,0.75);
+  padding-bottom: 20px;
+}
+img{
+  object-fit: cover;
+}
+#slide{
+  
 }

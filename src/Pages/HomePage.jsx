@@ -1,9 +1,14 @@
 import React from 'react'
-import { Accordion } from "flowbite-react";
+import guvohnomas from '../../src/assets/guvohnoma.png';
+import chaq from '../../src/assets/chaq.png';
+import ear from '../../src/assets/earth.png';
+import komp from '../../src/assets/komp.png';
+import bay from '../../src/assets/bayoma.png';
 const HomePage = () => {
+
   return (
     <main>
-      <header className='w-full  mt-[200px]'>
+      <header className='w-full  mt-[100px] border-b'>
             <div className="container h-full">
                 <div className='w-full pt-10 flex flex-col items-center'>
                     <div className='text-center'>
@@ -15,77 +20,47 @@ const HomePage = () => {
                 </div>
             </div>
       </header>
-      <section className='w-full'>
-          <div className="container">
-          <Accordion>
-      <Accordion.Panel>
-        <Accordion.Title>Patent nima?</Accordion.Title>
-        <Accordion.Content>
-          <p className="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is an open-source library of interactive components built on top of Tailwind CSS including buttons,
-            dropdowns, modals, navbars, and more.
-          </p>
-          <p className="text-gray-500 dark:text-gray-400">
-            Check out this guide to learn how to&nbsp;
-            <a
-              href="https://flowbite.com/docs/getting-started/introduction/"
-              className="text-cyan-600 hover:underline dark:text-cyan-500"
-            >
-              get started&nbsp;
-            </a>
-            and start developing websites even faster with components on top of Tailwind CSS.
-          </p>
-        </Accordion.Content>
-      </Accordion.Panel>
-      <Accordion.Panel>
-        <Accordion.Title>Patentlash nima uchun kerak?</Accordion.Title>
-        <Accordion.Content>
-          <p className="mb-2 text-gray-500 dark:text-gray-400">
-            Flowbite is first conceptualized and designed using the Figma software so everything you see in the library
-            has a design equivalent in our Figma file.
-          </p>
-          <p className="text-gray-500 dark:text-gray-400">
-            Check out the
-            <a href="https://flowbite.com/figma/" className="text-cyan-600 hover:underline dark:text-cyan-500">
-              Figma design system
-            </a>
-            based on the utility classes from Tailwind CSS and components from Flowbite.
-          </p>
-        </Accordion.Content>
-      </Accordion.Panel>
-      <Accordion.Panel>
-        <Accordion.Title>Brend patentlanmasa nima buladi?</Accordion.Title>
-        <Accordion.Content>
-          <p className="mb-2 text-gray-500 dark:text-gray-400">
-            The main difference is that the core components from Flowbite are open source under the MIT license, whereas
-            Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone
-            components, whereas Tailwind UI offers sections of pages.
-          </p>
-          <p className="mb-2 text-gray-500 dark:text-gray-400">
-            However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no
-            technical reason stopping you from using the best of two worlds.
-          </p>
-          <p className="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-          <ul className="list-disc pl-5 text-gray-500 dark:text-gray-400">
-            <li>
-              <a href="https://flowbite.com/pro/" className="text-cyan-600 hover:underline dark:text-cyan-500">
-                Flowbite Pro
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://tailwindui.com/"
-                rel="nofollow"
-                className="text-cyan-600 hover:underline dark:text-cyan-500"
-              >
-                Tailwind UI
-              </a>
-            </li>
-          </ul>
-        </Accordion.Content>
-      </Accordion.Panel>
-    </Accordion>
-          </div>
+     
+      <section className='w-full mt-[100px] border-b pb-[50px]'>
+            <div className="container">
+                <div className='w-full items-center flex flex-col'> 
+                        <p className='mb-[50px] text-[40px] md:text-[60px] font-bold tracking-6 text-blue-700'>Afzalliklarimiz</p>
+                        <div className='flex flex-wrap gap-10 justify-center'>
+                            <div className='flex flex-col items-center gap-5 card rounded-lg'>
+                              <img className='w-[200px]' src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_640.png" alt="" />
+                              <p>Rasmiy Patent Vakili</p>
+                            </div>
+                            <div className='flex flex-col items-center gap-5 card rounded-lg'>
+                              <img className='w-[200px] h-[200px]' src={guvohnomas} alt="" />
+                              <p>Vazirlik Guvohnomasi</p>
+                            </div>
+                            <div className='flex flex-col items-center gap-5 card rounded-lg'>
+                              <img className='w-[200px] h-[200px]' src="https://www.shutterstock.com/image-vector/dart-arrow-hit-center-target-600nw-2137131979.jpg" alt="" />
+                              <p>Ekspert</p>
+                            </div>
+                            <div className='flex flex-col items-center gap-5 card rounded-lg'>
+                              <img className='w-[200px]' src={chaq} alt="" />
+                              <p>Tezkor</p>
+                            </div>
+                            <div className='flex flex-col items-center gap-5 card rounded-lg'>
+                              <img className='w-[200px]' src={ear} alt="" />
+                              <p>Keang Qamrov</p>
+                            </div>
+                            <div className='flex flex-col items-center gap-5 card rounded-lg'>
+                              <img className='w-[200px]' src={komp} alt="" />
+                              <p>CRM tizim</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+      </section>
+      <section className='pt-[50px] flex flex-col items-center pb-[50px]'>
+           <div className='container'>
+           <p className='text-[40px] md:text-[60px] font-bold text-center tracking-6 text-blue-700'>Brendni patentlash jarayoni quyidagicha</p>
+                <div>
+                   
+               </div>
+           </div>
       </section>
     </main>
   )
