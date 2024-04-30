@@ -4,6 +4,9 @@ import chaq from '../../src/assets/chaq.png';
 import ear from '../../src/assets/earth.png';
 import komp from '../../src/assets/komp.png';
 import bay from '../../src/assets/bayoma.png';
+import lupa from '../../src/assets/lupa.png';
+import kash from '../../src/assets/kasholok.png';
+import { Accordion } from "flowbite-react";
 const HomePage = () => {
 
   return (
@@ -54,12 +57,49 @@ const HomePage = () => {
                 </div>
             </div>
       </section>
+      <section className='pt-[50px] flex flex-col items-center pb-[50px] border-b'>
+           <div className='container'>
+           <p className='text-[40px] md:text-[60px] font-bold text-center tracking-6 text-blue-700 mb-[50px]'>Brendni patentlash jarayoni quyidagicha</p>
+           <Accordion>
+      <Accordion.Panel>
+        <Accordion.Title>1-Patentlash mumkinligini tekshiramiz?</Accordion.Title>
+        <Accordion.Content>
+          <p className="mb-2 text-gray-500 dark:text-gray-400">
+           Ma'lumotlar
+          </p>
+        </Accordion.Content>
+      </Accordion.Panel>
+      <Accordion.Panel>
+        <Accordion.Title>2-To'lov va kerakli hujjatlarni olamiz</Accordion.Title>
+        <Accordion.Content>
+          <p className="mb-2 text-gray-500 dark:text-gray-400">
+            Malumotlar
+          </p>
+        </Accordion.Content>
+      </Accordion.Panel>
+      <Accordion.Panel>
+        <Accordion.Title>3-Patentlashga topshiramiz</Accordion.Title>
+        <Accordion.Content>
+          <p className="mb-2 text-gray-500 dark:text-gray-400">
+           Malumotlar
+          </p>
+        </Accordion.Content>
+      </Accordion.Panel>
+      <Accordion.Panel>
+        <Accordion.Title>4-Tayyor bo'lgach sizga topshiramiz</Accordion.Title>
+        <Accordion.Content>
+          <p className="mb-2 text-gray-500 dark:text-gray-400">
+           Malumotlar
+          </p>
+        </Accordion.Content>
+      </Accordion.Panel>
+    </Accordion>
+           </div>
+      </section>
       <section className='pt-[50px] flex flex-col items-center pb-[50px]'>
            <div className='container'>
-           <p className='text-[40px] md:text-[60px] font-bold text-center tracking-6 text-blue-700'>Brendni patentlash jarayoni quyidagicha</p>
-                <div>
-                   
-               </div>
+           <p className='text-[40px] md:text-[60px] font-bold text-center tracking-6 text-blue-700 mb-[50px]'>Patentlash Narxlari</p>
+           
            </div>
       </section>
     </main>
